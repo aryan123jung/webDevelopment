@@ -1,0 +1,350 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: white;
+}
+
+/* Header */
+header {
+    position: relative;
+    width: 100%;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+}
+
+.logo {
+    max-width: 400px;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; /* sabai alignment right side mah */
+    gap: 80px; /* menu ko gap */
+    padding: 0;
+    margin: 0;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+
+/* Canvas */
+.canvas {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+}
+
+/* Details Section */
+.details {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+
+.details h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.details h1 span {
+    color: orange;
+}
+
+.details p {
+    color: grey;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.details a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.details a:hover {
+    background: orange;
+    transform: scale(1.1);
+}
+
+/* Images Section */
+.images {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 40%;
+    height: auto;
+}
+
+.images img {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.5s;
+}
+
+.images .shape {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.images .mypicture {
+    position: absolute;
+    max-width: 500px;
+    bottom: 20%;
+    right: 1%;
+    z-index: 2;
+    transform: translate(0, -70px); /*image mathi move garne */
+}
+
+.images:hover .shape {
+    transform: translate(-50%, -10%);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    background: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; 
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Skills List */
+#skills ul {
+    list-style: none;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#skills ul li:hover {
+    transform: scale(1.1);
+    background: #0056b3;
+}
+
+/* Experience Items */
+.experience-item {
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience-item p {
+    color: #555;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 20px;
+    background: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-item {
+    text-align: left;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-item ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.project-item ul li {
+    list-style: disc;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+#experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-item {
+    text-align: left;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.experience-item h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.experience-item strong {
+    color: #333;
+}
+
+
+/* Social Media Section */
+#social-media {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+#social-media h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 50%;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+

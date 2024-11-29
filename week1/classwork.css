@@ -1,0 +1,41 @@
+*{
+    background-color: rgba(225, 235 , 205, 0.652);
+    margin: 1px;
+    padding: 5px;
+    text-align:center;
+}
+p.dotted
+{
+    border-style: dotted;
+}
+
+div{
+    border : 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 10px;
+    background-color: lightblue;
+
+    /*text dekhi boarder ko space badhcha*/
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+    /*box model*/
+    width: 200px;
+    height: 2px;
+    border: 15px solid rgb( 117 , 0 , 128 );
+    padding: 20px;
+    margin: 10px;
+}
+
+.static-box{
+    position: sticky;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    top: 20px;
+    left: 20px;
+}

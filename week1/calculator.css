@@ -1,32 +1,43 @@
-.grid-container {
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.calculator {
     display: grid;
-    height: 450px;
-    width: 370px;
-    background-color: black;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 200px;
+    background: #fff;
     padding: 10px;
-    gap: 3px;
-}
-
-.grid-container > div {
-    
-    grid-template-columns: auto auto auto auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 20x;
-    font-size: 30px;
-    border-radius: 3px;
 }
 
-.grid-item {
-    grid-column: 1/5;
-    border: solid grey;
-    background-color: whitesmoke;
+#display {
+    grid-column: span 4;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border-radius: 5px;
 }
 
-.grid-item1, .grid-item2 , .grid-item3 , .grid-item4, .grid-item5 ,.grid-item6 , .grid-item7 , .grid-item8 , .grid-item9 , .grid-item10 , .grid-item11 , .grid-item12 , .grid-item13 , .grid-item14 , .grid-item15 , .grid-item16 , .grid-item17 , .grid-item18  {
-    background-color: aqua;
-} 
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ddd;
+}
 
-.grid-item19{
-    grid-column: 3 / 5;
-    background-color: aqua;
+button:hover {
+    background: #bbb;
 }

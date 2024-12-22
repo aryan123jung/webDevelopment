@@ -1,41 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Sour Gummy", sans-serif;
     background-color: rgb(24, 179, 0);
 }
 
-ul{
-    padding:1em 4.5%;
+/* Header Navigation */
+header #nav ul {
+    padding: 1em 4.5%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#Logo {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-#Logo{
-    
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#user{
+#user {
     border-radius: 50%;
 }
 
-#slogan{
-    display: block;
-    font-family: "Sour Gummy", serif;
-    font-size: 4rem;
-    font-weight: bold;
-}
-#big{
-    color: rgb(231, 244, 246);
+/* Section for Text and Image */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgb(24, 179, 0);
 }
 
-.van{
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto;
+/* Text Content */
+.text-content {
+    color: black;
+    max-width: 50%;
+}
+
+#slogan {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    transform: translateX(100px);
+    
+}
+
+#big {
+    color: rgb(86, 50, 247);
+}
+
+#description {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    transform: translateX(100px);
+    color: whitesmoke;
+}
+
+
+/* Image Container */
+.images {
+    max-width: 50%; /* Ensure the container doesn't limit the image */
+    text-align: right;
+}
+
+/* Van Image */
+.images .vanpicture {
+    width: 250%; /* Force the image to be larger */
+    height: auto; /* Maintain aspect ratio */
+    transform: translateY(-20px); /* Optional vertical adjustment */
+    transform: translateX(-500px);
+}
+
+body {
+    overflow-x: hidden; /* Hides horizontal overflow */
+}
+
+
+/* Tracking Section */
+#track {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    
+}
+
+.track-search img {
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+.track-trackmy p {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1rem;
+   
+}
+
+.track-button button {
+    background: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.track-button button:hover {
+    background: #005f8c;
 }

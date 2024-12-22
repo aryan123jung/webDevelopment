@@ -7,28 +7,26 @@
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-item"></div>
-        <div class="grid-item1">C</div>
-        <div class="grid-item2">±</div>
-        <div class="grid-item3">%</div>
-        <div class="grid-item4">+</div>
-        <div class="grid-item5">1</div>
-        <div class="grid-item6">2</div>
-        <div class="grid-item7">3</div>
-        <div class="grid-item8">-</div>
-        <div class="grid-item9">4</div>
-        <div class="grid-item10">5</div>
-        <div class="grid-item11">6</div>
-        <div class="grid-item12">x</div>
-        <div class="grid-item13">7</div>
-        <div class="grid-item14">8</div>
-        <div class="grid-item15">9</div>
-        <div class="grid-item16">/</div>
-        <div class="grid-item17">0</div>
-        <div class="grid-item18">.</div>
-        <div class="grid-item19">=</div>
+    <div class="calculator">
+        <div id="display">0</div>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="inputOperation('+')">+</button>
+        <button onclick="inputOperation('-')">-</button>
+        <button onclick="inputOperation('*')">x</button>
+        <button onclick="inputOperation('/')">/</button>
+        <button onclick="inputNumber('1')">1</button>
+        <button onclick="inputNumber('2')">2</button>
+        <button onclick="inputNumber('3')">3</button>
+        <button onclick="inputNumber('4')">4</button>
+        <button onclick="inputNumber('5')">5</button>
+        <button onclick="inputNumber('6')">6</button>
+        <button onclick="inputNumber('7')">7</button>
+        <button onclick="inputNumber('8')">8</button>
+        <button onclick="inputNumber('9')">9</button>
+        <button onclick="inputNumber('0')">0</button>
+        <button onclick="calculateResult()">=</button>
     </div>
+    <script src="calculator.js"></script>
 </body>
 
 </html>
